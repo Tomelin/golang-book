@@ -140,10 +140,13 @@ func NewCategoria(name, description string) (*Categoria, error){
 Agora podemos criar uma função main, que chame a Catelogria. A nossa função seria algo assim:
 
 ```
+package main
+
 import (
     "my-package/entity"
     "fmt"
 )
+
 func main(){
 
     categoria, err := entity.Categoria("meu nome", "minhas description")
