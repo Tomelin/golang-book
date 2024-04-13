@@ -5,9 +5,9 @@ Esse repositório, tem como objetivo trazer uma breve introdução ao Golang e p
 Teremos os links de todos os posts, sendo o que estárá em evidência nesse arquivo, é o último postado.
 
 
-[Dominando as variáveis](./POST/DOMINANDO_VARIAVEIS.md)
-[Operadores e expressões aritméticas](./POST/OPERADORES_ARITMETICOS.MD)
-[Trabalhando com struct, funções e metodos](./POST/BASIC_STRUCT.md)
+1. [Dominando as variáveis](./POST/DOMINANDO_VARIAVEIS.md)
+2. [Operadores e expressões aritméticas](./POST/OPERADORES_ARITMETICOS.MD)
+3. [Trabalhando com struct, funções e metodos](./POST/BASIC_STRUCT.md)
 
 # Trabalhando com struct, funções e metodos
 A linguagem Go por sua definição não é Orientada a Objeto e por sua vez não possui classe propriamente dita. O Go trabalha no conceito de Struct, talvez podemos fazer um paralelo entre Struct e classes.
