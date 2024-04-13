@@ -30,9 +30,9 @@ type Categoria struct {
 ```
 No exemplo acima, declaramos a categoria dentro do package chamado entity. Dentro da nossa struct, temos o ID, Name e Description, todos do tipo string. Ao lado de cada tipo (string) temos o que chamamos de TAG no Go e vamos entendê-las.
 
-**`json:"id,omitempty"`**, aqui informaremos que quando apresentar a struct Categoria no formato json, o id será minúsculo; já o omitempty, irá omitir esse campo, caso o mesmo esteja vazio.
-**`json:"name"`**, o campo name, quando apresentado no formato JSON, irá aparecer com o name todo em minúsculo e “mesmo que vazio o campo irá aparecer, pois tem o parâmetro omitempty”.
-**`binding:"required"`**, ainda no name, temos a TAG binding, essa TAG irá nos ajudar para informar se o valor é requerido ou não e no caso no name, sim, o valor é requerido. Isso irá ajudar em algumas validações posterioeres;
+**`json:"id,omitempty"`**, aqui informaremos que quando apresentar a struct Categoria no formato json, o id será minúsculo; já o omitempty, irá omitir esse campo, caso o mesmo esteja vazio;  
+**`json:"name"`**, o campo name, quando apresentado no formato JSON, irá aparecer com o name todo em minúsculo e “mesmo que vazio o campo irá aparecer, pois tem o parâmetro omitempty”;  
+**`binding:"required"`**, ainda no name, temos a TAG binding, essa TAG irá nos ajudar para informar se o valor é requerido ou não e no caso no name, sim, o valor é requerido. Isso irá ajudar em algumas validações posterioeres;    
 **`json:"description"`**, já o campo description, não é requerido e irá ser apresentando no formato JSON em minúsculo, mesmo que esteja com o valor vazio.
 
 ## CRIANDO A STRUCT PRODUTO
@@ -50,9 +50,9 @@ type Produto struct {
 }
 ```
 
-Bom, não iremos comentar os três primeiros campos (ID, Name e Description) pois tem o mesmo comportamento da struct Categoria, vamos entender o objeto chamado Categoria dentro de Produto.
+Bom, não iremos comentar os três primeiros campos (ID, Name e Description) pois tem o mesmo comportamento da struct Categoria, vamos entender o objeto chamado Categoria dentro de Produto.  
 
-Assim como os outros campos eram do tipo string, o Categoria é do tipo (*Categoria — a primeira struct que criamos), ou seja, possui as mesmas instruções, “quase como se fosse uma herança”, porém ainda assim observamos que tem um * antes do Categoria. Esse * está nos referindo que o objeto Categoria é do tipo endereço de memória da struct Categoria, ou seja, teremos apenas o apontamento da memória de Categoria e não uma cópia dos valores. Isso no fim do dia, está nos informando que iremos economizar memória, pois não precisamos copiar os valores, apenas vamos ler o valor que já está na memória daquele objeto.
+Assim como os outros campos eram do tipo string, o Categoria é do tipo (*Categoria — a primeira struct que criamos), ou seja, possui as mesmas instruções, “quase como se fosse uma herança”, porém ainda assim observamos que tem um * antes do Categoria. Esse * está nos referindo que o objeto Categoria é do tipo endereço de memória da struct Categoria, ou seja, teremos apenas o apontamento da memória de Categoria e não uma cópia dos valores. Isso no fim do dia, está nos informando que iremos economizar memória, pois não precisamos copiar os valores, apenas vamos ler o valor que já está na memória daquele objeto.  
 
 Sim, pode ficar um pouco confuso no início, mas em seguida ficará mais claro.
 
