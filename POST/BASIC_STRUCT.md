@@ -1,14 +1,3 @@
-# Golang book
-
-Esse repositório, tem como objetivo trazer uma breve introdução ao Golang e principalmente focar nas áreas que tenho mais interesse que são automação, kubernetes operators, observabilidade e custom providers em geral com Golang.
-
-Teremos os links de todos os posts, sendo o que estárá em evidência nesse arquivo, é o último postado.
-
-
-[Dominando as variáveis](./POST/DOMINANDO_VARIAVEIS.md)
-[Operadores e expressões aritméticas](./POST/OPERADORES_ARITMETICOS.MD)
-[Trabalhando com struct, funções e metodos](./POST/BASIC_STRUCT.md)
-
 # Trabalhando com struct, funções e metodos
 A linguagem Go por sua definição não é Orientada a Objeto e por sua vez não possui classe propriamente dita. O Go trabalha no conceito de Struct, talvez podemos fazer um paralelo entre Struct e classes.
 
@@ -162,4 +151,3 @@ Nesse exemplo, deixaremos o Create e List em aberto, para evoluirmos posteriorme
 Espero que esse post, ajude a entender melhor trabalhar com struct e ponteiros (endereço de memória).
 
 Deixe aqui o seu comentário, para evoluirmos juntos no conhecimento!
-
