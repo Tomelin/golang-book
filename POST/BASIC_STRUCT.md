@@ -49,7 +49,7 @@ Sim, pode ficar um pouco confuso no início, mas em seguida ficará mais claro.
 
 Vamos criar os métodos da struct categoria e em seguida entenderemos os apontamentos de memórias.
 
-Já que possuímos a nossa struct, vamos criar 3 métodos para entendermos um pouco, os métodos que criaremos são (Create, List e validator). Sim, dois métodos com a primeira letra maiúscula e o validate com a primeira letra minúscula.
+Já que possuímos a nossa struct, vamos criar um método para entendermos um pouco. O método a ser criado é (validator).
 
 Vamos recordar que no Golang quando colocamos a primeira letra minúscula de uma Struct, Interface, Variável, Constante ou dos Métodos, essa variável será do tipo private (será vista apenas dentro do package), e se colocarmos em maiúscula, o parâmetro declarado será do tipo Public (será visto também fora do package). No nosso exemplo, queremos deixar o validate no formato private, apenas para ser acessado de dentro do package entity.
 
@@ -64,11 +64,9 @@ type Categoria struct {
     Description string `json:"description"`      // Description do tipo string
 }
 
-func (c *Categoria) Create() error{}
-func (c *Categoria) List() ([]Category,error){}
 func (c *Categoria) validator() (bool,error){}
 ```
-No exemplo acima, criamos 3 métodos que pertence à Categoria. O parâmetro (c *Categoria) após o func, está nos informando que a função (Create, List, validator) pertence à Categoria e que dentro de cada função iremos acessar os valores através do endereço de memória que está representado pela variável c (sim, no Golang é comum declarar variáveis apenas com uma letra), ou seja, tudo que for alterado da Categoria dentro da função (ou seja, na memória), poderá ser acessado na outra função sem problemas, pois apontaremos a variável de memória e não fazendo uma cópia do objeto na totalidade.
+No exemplo acima, criamo um método que pertence à Categoria. O parâmetro (c *Categoria) após o func, está nos informando que a função (validator) pertence à Categoria e que dentro de cada função iremos acessar os valores através do endereço de memória que está representado pela variável c (sim, no Golang é comum declarar variáveis apenas com uma letra), ou seja, tudo que for alterado da Categoria dentro da função (ou seja, na memória), poderá ser acessado na outra função sem problemas, pois apontaremos a variável de memória e não fazendo uma cópia do objeto na totalidade.
 
 ## CRIANDO A FUNÇÃO PARA CRIAR UMA NOVA CATEGORIA
 Agora, iremos criar uma função chamada NewCategoria, para que essa função receba dois valores (name e description) e retorne toda a struct com o ID preenchido.
@@ -101,8 +99,6 @@ func NewCategoria(name, description string) (*Categoria, error){
     return c, nil
     }
     
-    func (c *Categoria) Create() error{}
-    func (c *Categoria) List() ([]Category,error){}
     func (c *Categoria) validator() error {
     
     // Estamos validando se o Name está vazio
@@ -145,8 +141,6 @@ func main(){
 ```
 
 Na nossa função main acima, iniciamos a Categoria, passando o nome e description, caso de erro podemos tratar o erro e teremos o nosso resultado, os atributos de categoria e o ID.
-
-Nesse exemplo, deixaremos o Create e List em aberto, para evoluirmos posteriormente.
 
 Espero que esse post, ajude a entender melhor trabalhar com struct e ponteiros (endereço de memória).
 
