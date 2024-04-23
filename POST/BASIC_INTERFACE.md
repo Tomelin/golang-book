@@ -73,7 +73,7 @@ Vamos entender conforme o nosso exemplo:
   touch database.go
 ```
 5. DATABASE  
-   5.1. Agora iremos criar uma struct para trabahar com database
+   5.1. Agora iremos criar uma struct para trabalhar com database
 
 ```
   package storage
@@ -139,7 +139,7 @@ Vamos entender conforme o nosso exemplo:
   touch cache.go
 ```
 
-   6.2. Agora iremos criar uma struct para trabahar com cache redis
+   6.2. Agora iremos criar uma struct para trabalhar com cache redis
 
  ```
   package storage
@@ -194,7 +194,7 @@ Vamos entender conforme o nosso exemplo:
 
       **O que realmente importa entender, é que tanto a struct ProdutoStorageDB e ProdutoStorageCache possuem os mesmos métodos para a assinatura da interface**
 
-7. Agora iremos criar uma struct para trabahar com arquivos
+7. Agora iremos criar uma struct para trabalhar com arquivos
    7.1. Criaremos o arquivo files, dentro do nosso diretório storage
 
   ```
