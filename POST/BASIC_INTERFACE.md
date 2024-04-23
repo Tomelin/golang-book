@@ -19,14 +19,14 @@ Antes de começar, vamos ter 3 package no nosso exemplo, main, entity e storage.
 ```
 3. vamos criar o nosso package entity, já com as nossa struct
   
-   3.1 Criando o diretório e o arquivo entity;
+   3.1. Criando o diretório e o arquivo entity;
 ```
   mkdir entity
   cd entity
   touch entity.go
 ```
 
-   3.2 criando a nossa struct
+   3.2. criando a nossa struct
 ```
   package entity
 
@@ -66,14 +66,14 @@ As structs que criaremos precisarão ter a mesma assinatura (métodos).
 
 Vamos entender conforme o nosso exemplo:
 
-1. vamos criar o nosso package storage, com a struct para trabalhar com database
+4. vamos criar o nosso package storage, com a struct para trabalhar com database
 ```
   mkdir storage
   cd storage
   touch database.go
 ```
-2. DATABASE  
-   2.1 Agora iremos criar uma struct para trabahar com database
+5. DATABASE
+   5.1. Agora iremos criar uma struct para trabahar com database
 
 ```
   package storage
@@ -98,7 +98,7 @@ Vamos entender conforme o nosso exemplo:
 
    Agora vamos implementar a nossa assinatura para trabalharmos com a interface
 
-   2.2 Implementando a assinatura a nossa struct ProdutoStorageDB, continuaremos com o nosso exemplo acima  
+   5.2. Implementando a assinatura a nossa struct ProdutoStorageDB, continuaremos com o nosso exemplo acima  
 
 ```
   package storage
@@ -131,15 +131,15 @@ Vamos entender conforme o nosso exemplo:
 
    Aqui é onde realmente acontece a mágica, a struct ProdutoStorageDB, contém os métodos necessários para implementar a intefrcae entity.ProdutoInterface, ou seja, nesse caso já podemos usar a nossa interface.
 
-3. Agora iremos criar uma struct para trabahar com cache redis
-  3.1 Vamos criar o arquivo cache, dentro do nosso diretório storage
+6. Agora iremos criar uma struct para trabahar com cache redis
+   6.1. Vamos criar o arquivo cache, dentro do nosso diretório storage
 
 ```
   cd storage
   touch cache.go
 ```
 
-   3.2
+   6.2.
 
  ```
   package storage
@@ -159,11 +159,11 @@ Vamos entender conforme o nosso exemplo:
   }
  ```
 
-     Da mesma forma que o exemplo do item 2, nesse momento a struct ProdutoStorageCache não está preparada para trabalhar com a nossa interface entity.ProdutoInterface, simplesmente porque não possui os métodos necessários.
-      
-     Agora vamos implementar a nossa assinatura para trabalharmos com a interface.
+   Da mesma forma que o exemplo do item 2, nesse momento a struct ProdutoStorageCache não está preparada para trabalhar com a nossa interface entity.ProdutoInterface, simplesmente porque não possui os métodos necessários.
+    
+   Agora vamos implementar a nossa assinatura para trabalharmos com a interface.
 
-      3.3
+   6.3.
 
 ```
   package storage
@@ -196,14 +196,14 @@ Vamos entender conforme o nosso exemplo:
 
       **O que realmente importa entender, é que tanto a struct ProdutoStorageDB e ProdutoStorageCache possuem os mesmos métodos para a assinatura da interface**
 
-4. Agora iremos criar uma struct para trabahar com arquivos
-   4.1 Criaremos o arquivo files, dentro do nosso diretório storage
+7. Agora iremos criar uma struct para trabahar com arquivos
+   7.1. Criaremos o arquivo files, dentro do nosso diretório storage
 
   ```
     cd storage
     touch files.go
   ```
-      4.2
+   7.2.
   ```
     package storage
     
@@ -228,7 +228,7 @@ Vamos entender conforme o nosso exemplo:
 Da mesma forma que o exemplo do item 2, nesse momento a struct ProdutoStorageFiles não está preparada para trabalhar com a nossa interface entity.ProdutoInterface, simplesmente porque não possui os métodos necessários.
 
 Agora vamos implementar a nossa assinatura para trabalharmos com a interface.
-4.3
+   7.3.
 ```
   package storage
   
@@ -266,16 +266,16 @@ Observe que agora temos praticamente o mesmo exemplo que ProdutoStorageDB e Prod
 
 Aqui nesse exemplo, não iremos desenvolver a lógica dentro da função, o nosso propósito é auxiliar no entendimento de interfaces no Golang.
 
-5. Agora, vamos implementar a lógica no arquivo mais, de como chamariamos essas funções.
+8. Agora, vamos implementar a lógica no arquivo mais, de como chamariamos essas funções.
 
-5.1 Vamos criar o diretório cmd na raiz do nosso projeto
+   8.1. Vamos criar o diretório cmd na raiz do nosso projeto
 ```
   mkdir cmd
   cd cmd
   touch main.go
 ```
 
-5.2 Agora vamos implemntar a nossa lógica de como consumir nossos storages.
+   8.2. Agora vamos implemntar a nossa lógica de como consumir nossos storages.
 ```
   package main
   
