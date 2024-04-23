@@ -274,7 +274,7 @@ Aqui nesse exemplo, não iremos desenvolver a lógica dentro da função, o noss
   touch main.go
 ```
 
-   8.2. Agora vamos implemntar a nossa lógica de como consumir nossos storages.
+   8.2. Agora vamos implementar a nossa lógica, de como consumir nossos storages.
 ```
   package main
   
@@ -333,4 +333,7 @@ Observer que a veriável **ProdutoInterface** é reutilizada em outras chamdas d
 Mas novamente, as structs (ProdutoStorageDB, ProdutoStorageCache e ProdutoStorageFiles), implementam os métodos que a assinatura do ProdutoInterface precisa para fazer o match e passar a funcionar.
 
 Também precebemos que a struct pode ter outros métodos além da ProdutoInterface, não pode ter menos, pois se tiver menos, a assinatura não será válida.
- 
+
+Esse é um exemplo de como podemos usar a interface no Golang.
+
+Deixe seus comentários!
