@@ -19,13 +19,13 @@ Antes de começar, vamos ter 3 package no nosso exemplo, main, entity e storage.
 ```
 3. vamos criar o nosso package entity, já com as nossa struct
   
-3.1 Criando o diretório e o arquivo entity;
+   3.1 Criando o diretório e o arquivo entity;
 ```
   mkdir entity
   cd entity
   touch entity.go
 ```
-3.2 criando a nossa struct
+   3.2 criando a nossa struct
 ```
   package entity
 
