@@ -5,14 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43a2b92d-518e-4f91-87d2-df1775488051" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/examples/basic_interface/cmd/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/basic_interface/entity/product.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/basic_interface/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/basic_interface/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/basic_interface/storage/cache.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/basic_interface/storage/database.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/basic_interface/storage/files.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/build/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/POST/BASIC_INTERFACE.md" beforeDir="false" afterPath="$PROJECT_DIR$/POST/BASIC_INTERFACE.md" afterDir="false" />
     </list>
