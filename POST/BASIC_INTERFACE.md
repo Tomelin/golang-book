@@ -72,8 +72,8 @@ Vamos entender conforme o nosso exemplo:
   cd storage
   touch database.go
 ```
-2. Agora iremos criar uma struct para trabahar com database  
-  2.1
+2. DATABASE  
+   2.1 Agora iremos criar uma struct para trabahar com database
 
 ```
   package storage
@@ -98,7 +98,7 @@ Vamos entender conforme o nosso exemplo:
   
     Agora vamos implementar a nossa assinatura para trabalharmos com a interface
 
-  2.2 Implementando a assinatura a nossa struct ProdutoStorageDB, continuaremos com o nosso exemplo acima  
+   2.2 Implementando a assinatura a nossa struct ProdutoStorageDB, continuaremos com o nosso exemplo acima  
 
 ```
   package storage
