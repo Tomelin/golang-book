@@ -25,7 +25,7 @@ Antes de começar, vamos ter 3 package no nosso exemplo, main, entity e storage.
   cd entity
   touch entity.go
 ```
-  3.2 criando a nossa struct
+3.2 criando a nossa struct
 ```
   package entity
 
