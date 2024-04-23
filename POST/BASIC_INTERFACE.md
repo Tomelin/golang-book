@@ -159,7 +159,7 @@ Vamos entender conforme o nosso exemplo:
   }
  ```
 
-   Da mesma forma que o exemplo do item 2, nesse momento a struct ProdutoStorageCache não está preparada para trabalhar com a nossa interface entity.ProdutoInterface, simplesmente porque não possui os métodos necessários.
+   Da mesma forma que o exemplo anterior, nesse momento a struct ProdutoStorageCache não está preparada para trabalhar com a nossa interface entity.ProdutoInterface, simplesmente porque não possui os métodos necessários.
 
    6.3. Agora vamos implementar a nossa assinatura para trabalharmos com a interface.
 
@@ -190,9 +190,9 @@ Vamos entender conforme o nosso exemplo:
   func (p *ProdutoStorageCache) CloseCache() error                     { return nil } 
 ```
 
-      Observe que agora temos praticamente o mesmo exemplo que ProdutoStorageDB, o que muda é a struct no qual associamos os métodos.
+  Observe que agora temos praticamente o mesmo exemplo que ProdutoStorageDB, o que muda é a struct no qual associamos os métodos.
 
-      **O que realmente importa entender, é que tanto a struct ProdutoStorageDB e ProdutoStorageCache possuem os mesmos métodos para a assinatura da interface**
+  **O que realmente importa entender, é que tanto a struct ProdutoStorageDB e ProdutoStorageCache possuem os mesmos métodos para a assinatura da interface**
 
 7. Agora iremos criar uma struct para trabalhar com arquivos
    7.1. Criaremos o arquivo files, dentro do nosso diretório storage
