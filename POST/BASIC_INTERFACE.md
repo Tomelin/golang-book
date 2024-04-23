@@ -129,17 +129,17 @@ Vamos entender conforme o nosso exemplo:
   func (p *ProdutoStorageDB) CloseDB() error                        { return nil }
 ```
 
-   Aqui é onde realmente acontece a mágica, a struct ProdutoStorageDB, contém os métodos necessários para implementar a intefrcae entity.ProdutoInterface, ou seja, nesse caso já podemos usar a nossa interface.
+   Aqui é onde realmente acontece a mágica, a struct ProdutoStorageDB, contém os métodos necessários para implementar a interface entity.ProdutoInterface, ou seja, nesse caso já podemos usar a nossa interface.
 
-6. Agora iremos criar uma struct para trabahar com cache redis
-   6.1. Vamos criar o arquivo cache, dentro do nosso diretório storage
+6. CACHE  
+   6.1. Criando o arquivo de cache dentro do package storage
 
 ```
   cd storage
   touch cache.go
 ```
 
-   6.2.
+   6.2. Agora iremos criar uma struct para trabahar com cache redis
 
  ```
   package storage
@@ -160,10 +160,8 @@ Vamos entender conforme o nosso exemplo:
  ```
 
    Da mesma forma que o exemplo do item 2, nesse momento a struct ProdutoStorageCache não está preparada para trabalhar com a nossa interface entity.ProdutoInterface, simplesmente porque não possui os métodos necessários.
-    
-   Agora vamos implementar a nossa assinatura para trabalharmos com a interface.
 
-   6.3.
+   6.3. Agora vamos implementar a nossa assinatura para trabalharmos com a interface.
 
 ```
   package storage
