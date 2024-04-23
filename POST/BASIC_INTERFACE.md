@@ -1,4 +1,4 @@
-# Entendendo INTERFACE NO GOLANG de uma vez por todas
+# Entendendo interface no Golang de uma vez por todas
 
 Nesse tópico, vamos abordar o uso de interfaces no Golang. Vou confessar que no início tive bastante dificuldade para entender interface no GO e vou tentar trazer de uma forma diferentes que constumamos ver nos exemplos.
 
