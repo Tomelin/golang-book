@@ -48,7 +48,7 @@ Antes de começar, vamos ter 3 package no nosso exemplo, main, entity e storage.
   }
 ```
 
-Nesse passo, a struct Produto e a interface ProdutoInterface, estão em letra maiuscula, pois são "publicas" e serão acessadas por outros packages.
+Nesse passo, a struct Produto e a interface ProdutoInterface, estão em letra maiuscula, pois são **publicas** e serão acessadas por outros packages.
 
 **Perceba, criamos a interface e não conectamos em nenhum momento a struct.** 
 Esse é o ponto importante a ser entendido, nesse momento a interface, não está vinculada a nenhuma struct, apenas tem o que chamamos assinatura, e essa assinatura possui o seguinte:
@@ -61,7 +61,8 @@ Esse é o ponto importante a ser entendido, nesse momento a interface, não est�
 
 Essa assinatura nos informa que toda e qualquer struct que tiver os métodos acima, podemos usar a interface ProdutoInterface
 
-Vamos agora, criar o package storage e dentro de storage, teremos 3 structs para trabalharmos com (database, cache, files). Para poder usar a interface que criamos As structs que criamos precisarão ter a mesma assinatura (métodos).
+Vamos agora, criar o package storage e dentro de storage. Teremos 3 structs para trabalharmos com (database, cache, files), para usarmos a interface que criamos  
+As structs que criaremos precisarão ter a mesma assinatura (métodos).
 
 Vamos entender conforme o nosso exemplo:
 
