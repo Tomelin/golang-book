@@ -92,11 +92,11 @@ Vamos entender conforme o nosso exemplo:
   func NewProdutoStorageDB(db *sql.DB) entity.ProdutoInterface {
     _return &ProdutoStorageDB{DB: db}
   }
-```
-   
-    Nesse momento a struct ProdutoStorageDB, não possui a assinatura para trabalhar com a interface entity.ProdutoInterface, ou seja, nesse momento teremos um erro de assinatura.
-  
-    Agora vamos implementar a nossa assinatura para trabalharmos com a interface
+``` 
+
+Nesse momento a struct ProdutoStorageDB, não possui a assinatura para trabalhar com a interface entity.ProdutoInterface, ou seja, nesse momento teremos um erro de assinatura.
+
+Agora vamos implementar a nossa assinatura para trabalharmos com a interface
 
    2.2 Implementando a assinatura a nossa struct ProdutoStorageDB, continuaremos com o nosso exemplo acima  
 
