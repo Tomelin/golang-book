@@ -224,10 +224,10 @@ Vamos entender conforme o nosso exemplo:
       }
     }
   ```
-Da mesma forma que o exemplo do item 2, nesse momento a struct ProdutoStorageFiles não está preparada para trabalhar com a nossa interface entity.ProdutoInterface, simplesmente porque não possui os métodos necessários.
+Da mesma forma que os exemplos anteriores, nesse momento a struct ProdutoStorageFiles não está preparada para trabalhar com a nossa interface entity.ProdutoInterface, simplesmente porque não possui os métodos necessários.
 
-Agora vamos implementar a nossa assinatura para trabalharmos com a interface.
-   7.3.
+
+   7.3. Agora vamos implementar a nossa assinatura para trabalharmos com a interface
 ```
   package storage
   
