@@ -1,8 +1,8 @@
 # Entendendo interface no Golang de uma vez por todas
 
-Nesse tópico, vamos abordar o uso de interfaces no Golang. Vou confessar que no início tive bastante dificuldade para entender interface no GO e vou tentar trazer de uma forma diferentes que constumamos ver nos exemplos.
+Nesse tópico, vamos abordar o uso de interfaces no Golang. Vou confessar que no início tive bastante dificuldade para entender interface no GO e vou tentar trazer de uma forma diferente que constumamos ver nos exemplos.
 
-Primeiro ponto que precisamos entender, é que a interface está "se referenciando aos métodos das struct". Deixa eu reescrever esse ponto, a interface é baseado numa ***assinatura***, ou seja, na assinatura de uma struct que possui N métodos. Todas as assinaturas que a interface contiver, é necessário que a struct contenha os mesmos métodos ou mais.
+Primeiro ponto que precisamos entender, é que a interface está **se referenciando aos métodos das struct**. Deixa eu reescrever esse ponto, a interface é baseado numa ***assinatura***, ou seja, na assinatura de uma struct que possui N métodos. Todas as assinaturas que a interface contiver, é necessário que a struct contenha os mesmos métodos ou mais.
 
 Vamos ao exemplo, que acredito que ficará mais claro. Nesse exemplo, vamos trabalhar para gravar os dados de uma struct de produto. Vamos iniciar criando a nossa struct.
 
@@ -18,7 +18,8 @@ Antes de começar, vamos ter 3 package no nosso exemplo, main, entity e storage.
   go mod init github.com/tomelin/golang-book/examples/basic_interface
 ```
 3. vamos criar o nosso package entity, já com as nossa struct
-  3.1 Criando o diretório e o arquivo entity;
+  
+3.1 Criando o diretório e o arquivo entity;
 ```
   mkdir entity
   cd entity
