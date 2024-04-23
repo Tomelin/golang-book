@@ -265,7 +265,7 @@ Observe que agora temos praticamente o mesmo exemplo que ProdutoStorageDB e Prod
 
 Aqui nesse exemplo, não iremos desenvolver a lógica dentro da função, o nosso propósito é auxiliar no entendimento de interfaces no Golang.
 
-8. Agora, vamos implementar a lógica no arquivo mais, de como chamariamos essas funções.
+8. Agora, vamos implementar a lógica no arquivo main.go, e como instanciar a interface
 
    8.1. Vamos criar o diretório cmd na raiz do nosso projeto
 ```
