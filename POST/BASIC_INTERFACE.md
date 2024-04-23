@@ -194,14 +194,15 @@ Vamos entender conforme o nosso exemplo:
 
   **O que realmente importa entender, é que tanto a struct ProdutoStorageDB e ProdutoStorageCache possuem os mesmos métodos para a assinatura da interface**
 
-7. Agora iremos criar uma struct para trabalhar com arquivos
+7. FILES  
    7.1. Criaremos o arquivo files, dentro do nosso diretório storage
 
   ```
     cd storage
     touch files.go
   ```
-   7.2.
+
+   7.2. Agora iremos criar uma struct para trabalhar com arquivos
   ```
     package storage
     
