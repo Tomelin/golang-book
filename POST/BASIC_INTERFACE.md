@@ -72,7 +72,7 @@ Vamos entender conforme o nosso exemplo:
   cd storage
   touch database.go
 ```
-5. DATABASE
+5. DATABASE  
    5.1. Agora iremos criar uma struct para trabahar com database
 
 ```
